@@ -1,0 +1,8 @@
+
+<div class="flex-container">
+  <button (click)="handleClick()" class="toggleTimerBtn" [class.paused]="inProgress"></button>
+  <svg width="50" height="50" viewbox="0 0 50 50">
+    <path id="border" transform="translate(25, 25)" [attr.d]="svg?.d"/>
+    <path id="loader" transform="translate(25, 25)  scale(.84)" [attr.d]="svg?.d"/>
+  </svg>
+</div>

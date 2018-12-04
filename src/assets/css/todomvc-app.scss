@@ -232,6 +232,41 @@ label[for='toggle-all'] {
 	display: block;
 }
 
+.todo-list li .toggleTimerBtn {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: 15px;
+  z-index: 2;
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 20px;
+  transition: color 0.2s ease-out;
+
+  border-color: transparent transparent transparent #cc9a9a;
+  transition: 100ms all ease;
+  cursor: pointer;
+
+  // play state
+  border-style: solid;
+  border-width: 17px 0 17px 20px;
+}
+
+.todo-list li:hover .toggleTimerBtn {
+  visibility: visible;
+  &.paused {
+    border-style: double;
+    border-width: 0px 0 0px 20px;
+  }
+
+  &:hover {
+    border-color: transparent transparent transparent #af5b5e;;
+  }
+}
+
 .todo-list li .edit {
 	display: none;
 }

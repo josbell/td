@@ -1,0 +1,12 @@
+.flex-container {
+  justify-content: space-between;
+  display: flex;
+  .left {
+    flex-basis: 60%;
+    justify-content: flex-start;
+  }
+  .right {
+    flex-grow: 1;
+    justify-content: space-evenly;
+  }
+}

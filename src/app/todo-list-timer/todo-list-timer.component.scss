@@ -1,0 +1,20 @@
+.flex-container {
+  width: 50px;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+}
+svg {
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  margin-top: -25px;
+}
+
+#loader
+{ fill: #0088cc }
+
+#border
+{ fill: #00517a }
