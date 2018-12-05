@@ -11,6 +11,7 @@ import { TodoDataService } from './todo-data.service';
 import { TodoListItemComponent } from './todo-list-item/todo-list-item.component';
 import { ApiService } from './api.service';
 import { TodoListTimerComponent } from './todo-list-timer/todo-list-timer.component';
+import { TimeDurationPipe } from './time-duration.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TodoListTimerComponent } from './todo-list-timer/todo-list-timer.compon
     TodoListFooterComponent,
     TodoListHeaderComponent,
     TodoListItemComponent,
-    TodoListTimerComponent
+    TodoListTimerComponent,
+    TimeDurationPipe
   ],
   imports: [
     BrowserModule,

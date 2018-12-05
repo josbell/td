@@ -37,9 +37,9 @@ export class AppComponent implements OnInit {
       );
   }
 
-  onToggleTodoComplete(todo) {
+  onUpdateToDo(todo) {
     this.todoDataService
-      .toggleTodoComplete(todo)
+      .updateTodo(todo)
       .subscribe(
         (updatedTodo) => {
           todo = updatedTodo;
@@ -53,6 +53,16 @@ export class AppComponent implements OnInit {
       .subscribe(
         (_) => {
           this.todos = this.todos.filter((t) => t.id !== todo.id);
+        }
+      );
+  }
+
+  onToggleTodoComplete(todo) {
+    this.todoDataService
+      .toggleTodoComplete(todo)
+      .subscribe(
+        (updatedTodo) => {
+               todo = updatedTodo;
         }
       );
   }

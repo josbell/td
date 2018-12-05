@@ -1,11 +1,10 @@
 <div class="view flex-container">
   <div class="flex-container left">
       <input class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
-      <label>{{todo.title}}</label>
+      <label>{{todo.title}} <span class="timeSpentLabel">({{todo.timeSpent | timeDuration}})</span></label>
   </div>
   <div class="flex-container right">
-    <app-todo-list-timer></app-todo-list-timer>
+    <app-todo-list-timer *ngIf="!todo.complete" [timerDurationMins]=30 (timerStopped)="updateTodoTimeSpent($event, todo)"></app-todo-list-timer>
     <button class="destroy" (click)="removeTodo(todo)"></button>
   </div>
 </div>
-

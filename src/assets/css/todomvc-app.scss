@@ -232,6 +232,40 @@ label[for='toggle-all'] {
 	display: block;
 }
 
+.todo-list li  .container {
+  width: 50px;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+}
+.todo-list li svg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  top: 50%;
+  margin-top: -25px;
+}
+
+.todo-list li .timeElapsed {
+  z-index: 3;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  position: absolute;
+  font-size: 15px;
+  color: black;
+
+  &.paused {
+    color: red;
+  }
+}
+.todo-list li #loader
+{ fill: #0088cc }
+
+.todo-list li #border
+{ fill: #00517a }
+
 .todo-list li .toggleTimerBtn {
   visibility: hidden;
   position: absolute;
@@ -257,13 +291,13 @@ label[for='toggle-all'] {
 
 .todo-list li:hover .toggleTimerBtn {
   visibility: visible;
-  &.paused {
+  &.active {
     border-style: double;
     border-width: 0px 0 0px 20px;
   }
 
   &:hover {
-    border-color: transparent transparent transparent #af5b5e;;
+    border-color: transparent transparent transparent #af5b5e;
   }
 }
 

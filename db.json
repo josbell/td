@@ -3,22 +3,20 @@
     {
       "title": "my first task",
       "complete": false,
+      "timeSpent": 15,
       "id": 1
     },
     {
-      "title": "my second task",
+      "title": "second task",
       "complete": false,
+      "timeSpent": 14,
       "id": 2
     },
     {
-      "title": "fourth",
+      "title": "third task",
       "complete": false,
-      "id": 4
-    },
-    {
-      "title": "fifth",
-      "complete": false,
-      "id": 5
+      "timeSpent": 6,
+      "id": 3
     }
   ]
 }

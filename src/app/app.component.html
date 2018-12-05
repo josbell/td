@@ -5,6 +5,7 @@
   <app-todo-list
     [todos]="todos"
     (toggleComplete)="onToggleTodoComplete($event)"
+    (updateTimeSpent)="onUpdateToDo($event)"
     (remove)="onRemoveTodo($event)"
   ></app-todo-list>
   <app-todo-list-footer

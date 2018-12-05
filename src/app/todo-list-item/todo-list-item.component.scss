@@ -4,6 +4,9 @@
   .left {
     flex-basis: 60%;
     justify-content: flex-start;
+    .timeSpentLabel {
+      font-size: small;
+    }
   }
   .right {
     flex-grow: 1;
